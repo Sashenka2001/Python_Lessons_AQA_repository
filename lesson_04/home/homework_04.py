@@ -30,14 +30,15 @@ print(replaced_text_1)
 # task 02 ==
 """ Замініть .... на пробіл
 """
-replaced_text_2 = adwentures_of_tom_sawer.replace("....", " ")
-print(replaced_text_2)
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("....", " ")
+print(adwentures_of_tom_sawer)
 
 # task 03 ==
 """ Зробіть так, щоб у тексті було не більше одного пробілу між словами.
 """
-split_by_space = adwentures_of_tom_sawer.replace("  ", " ")
-print(split_by_space)
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("   ", " ")
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("  ", " ")
+print(adwentures_of_tom_sawer)
 
 # task 04
 """ Виведіть, скількі разів у тексті зустрічається літера "h"
@@ -50,11 +51,12 @@ print(h_amount)
 підказка - порахувати кожну велику літеру напр, .count("A") і їх сумму
 """
 title_words_count = 0
-words_list = adwentures_of_tom_sawer.replace("\n", " ").split(" ")
+words_list = adwentures_of_tom_sawer.split(" ")
 for i in words_list:
     if i.istitle():
         title_words_count = title_words_count + 1
 print(title_words_count)
+
 # task 06
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
 """
@@ -65,7 +67,7 @@ print(tom_position)
 """ Розділіть змінну adwentures_of_tom_sawer по кінцю речення.
 Збережіть результат у змінній adwentures_of_tom_sawer_sentences
 """
-adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.rstrip(".").replace("....", "").split(".")
+adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split(". ")
 print(adwentures_of_tom_sawer_sentences)
 
 # task 08
